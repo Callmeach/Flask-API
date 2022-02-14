@@ -76,7 +76,7 @@ class Livre(db.Model):
         db.session.commit()
 
 
-db.create_all()
+#db.create_all()
 
 
 ###########################################################################################
