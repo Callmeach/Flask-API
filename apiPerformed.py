@@ -20,9 +20,9 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:{}@localhost:5432/PythonProject".format(password)
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://mgrlxlfhvevpsv" \
-                                            ":e0634facfff87940f5b1cfee49eb2539d15b421fab101a585de2d365163cfdda@ec2-3" \
-                                            "-219-204-29.compute-1.amazonaws.com:5432/d29b4647kceq1f"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://dxcfzdkqdqmvfr" \
+                                            ":5f75c871d98dc969eb42ffb0fcf0e8ba4a709632ff178360565619b0ab5993d3@ec2-50" \
+                                            "-19-32-96.compute-1.amazonaws.com:5432/ddhjnde96u4d6a"
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
