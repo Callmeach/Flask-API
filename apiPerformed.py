@@ -11,7 +11,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-ENV = 'dev'
+ENV = 'prod'
 
 password = quote_plus(str(os.getenv('password')))
 
@@ -76,7 +76,7 @@ class Livre(db.Model):
         db.session.commit()
 
 
-db.create_all()
+#db.create_all()
 
 
 ###########################################################################################
