@@ -20,7 +20,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:{}@localhost:5432/PythonProject".format(password)
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://dxcfzdkqdqmvfr" \
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://dxcfzdkqdqmvfr" \
                                             ":5f75c871d98dc969eb42ffb0fcf0e8ba4a709632ff178360565619b0ab5993d3@ec2-50" \
                                             "-19-32-96.compute-1.amazonaws.com:5432/ddhjnde96u4d6a"
 
